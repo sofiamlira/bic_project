@@ -17,10 +17,8 @@ def householder(w):
 
     for jj in range(len(w0[1,:])): #percorre colunas
         k=0
-        w0_sum=0
 
         for ii in range(len(w0[:,1])): #percorre todas as linhas a partir de zero
-#            print(np.count_nonzero(w0[ii:,jj]))
             k = np.count_nonzero(w0[ii:,jj]) #
 
             if k!=0:
@@ -33,9 +31,7 @@ def householder(w):
 
             if jj<(2**m - 1):
                 jj += 1
-                break #COM OU SEM BREAK??
-            
-            
+                break           
             
             print(w0)   
     
